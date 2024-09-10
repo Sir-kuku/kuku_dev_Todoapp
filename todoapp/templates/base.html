@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <link rel="stylesheet" href="{% static 'styles.css'%}">
+    <title>To Do App</title>
+</head>
+<body>
+    <nav class="nav">
+        <span>
+            <li><a href="{% url 'home' %}">HOME</a></li>
+            <li><a href="{% url 'task_list' %}">TASKS</a></li>
+        </span>
+        {% if user.is_authenticated %}
+        <li>
+            <img src="" alt="">Profile  Logo
+            <li>Hi {{ user.username }}</li>
+        </li>
+        <form action="{% url 'logout' %}">
+            {% csrf_token %}
+            <button type="submit">logout</button>
+        </form>
+        {% else %}
+        <li>
+            <a href="{% url 'login' %}">Login</a>
+        </li>
+        <li>
+            <a href="{%url 'signup' %}">Signup</a>
+        </li>
+        {% endif %}
+    </nav>
+    {% block content %}
+
+    {% endblock content %}
+</body>
+</html>

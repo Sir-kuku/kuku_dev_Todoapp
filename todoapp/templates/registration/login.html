@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Login To Your Account</h2>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_ul }}
+        <input type="submit" value="Login"/>
+    </form>
+
+    <span>
+        <a href="{% url 'signup' %}">
+            Signup
+        </a>
+    </span>
+
+{% endblock content %}

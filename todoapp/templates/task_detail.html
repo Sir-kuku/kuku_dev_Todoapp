@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="task_detail">
+    <h1><strong>TASKS DETAILS</strong></h1>
+    <p class="body"><strong>{{task.title}}</strong></p>
+    <p><strong>CREATED BY:</strong> <i>{{ task.user}}</i></p>
+    <p><u><i><strong>{{task.description}}</strong></i></u></p>
+</div>
+<div class="task_detail">
+    <p><strong>CREATED AT:</strong> <i>{{task.created_at}}</i></p>
+    <p><strong>DUE BY:</strong> <i>{{task.due_date}}</i></p>
+    <p><strong>PRIORITY:</strong> <i>{{task.priority}}</i></p>
+    
+    <a href="{% url 'task_edit' task.pk %}"><strong>EDIT TASK</strong></a><br><br>
+    <a href="{% url 'task_delete' task.pk %}"><strong>DELETE TASK</strong></a>
+</div>
+
+
+{% endblock content %}

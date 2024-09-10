@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    padding: 12px;
+}
+body{
+    background-color: rgb(57, 166, 180);
+    color: black;
+}
+h2{
+    color: rgb(20, 37, 13);
+    font-size: large;
+}
+.task_detail{
+    color: rgb(30, 124, 72);
+    font-family: 'Times New Roman', Times, serif;
+}
+.body{
+    font-weight: 900;
+     font-weight: 900;
+}

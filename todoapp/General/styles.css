@@ -1,0 +1,240 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f1f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1, h2 {
+    color: #4b0082;
+}
+
+/* Nav */
+/* Navigation Styles */
+.nav {
+    background-color: #801972; /* Purple background */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+}
+
+.nav span {
+    display: flex;
+    align-items: center;
+}
+
+.nav li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+
+.nav a:hover {
+    color: #74a4bb; /* Light purple on hover */
+}
+
+.nav form {
+    margin-left: 15px;
+}
+
+.nav input[type="submit"] {
+    background-color: #6a0dad;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.nav input[type="submit"]:hover {
+    background-color: #8a2be2;
+}
+
+.nav li {
+    color: #d1b3ff;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.nav form li {
+    margin-left: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav span {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .nav li {
+        margin: 10px 0;
+    }
+
+    .nav form {
+        margin-left: 0;
+    }
+
+    .nav input[type="submit"] {
+        width: 100%;
+    }
+}
+
+/* Task List */
+.task-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    background-color: #e6e1f0;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.task-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Links */
+a {
+    color: #6a0dad;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #9b30ff;
+    text-decoration: underline;
+}
+
+/* Task Status */
+.task-status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.9em;
+}
+
+.task-status.completed {
+    background-color: #b19cd9;
+    color: #fff;
+}
+
+.task-status.pending {
+    background-color: #f08080;
+    color: #fff;
+}
+
+/* Task Detail */
+.task-detail {
+    background-color: #e6e1f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #6a0dad;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: #8a2be2;
+}
+
+/* Task Detail Page */
+.task-detail {
+    background-color: #e6e1f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.task-detail h1 {
+    color: #4b0082;
+}
+
+.task-detail p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.task-status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.9em;
+}
+
+.task-status.completed {
+    background-color: #b19cd9;
+    color: #fff;
+}
+
+.task-status.pending {
+    background-color: #f08080;
+    color: #fff;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #6a0dad;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: #8a2be2;
+}
